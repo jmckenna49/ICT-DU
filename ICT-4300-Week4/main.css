@@ -1,45 +1,67 @@
 :root {
-    --green: #00FF00;
-    --white: #FFFFFF;
-    --black: #000000;
-  }
-  
-  body {
-    background: var(--bg);
-    color: var(--fontColor);
-    font-family: helvetica;
-  }
-  
-  li {
-    list-style: circle;
-  }
-  
-  .list {
-    list-style: square;
-  }
-  
-  .light-theme {
-    --bg: var(--green);
-    --fontColor: var(--black);
-    --btnBg: var(--black);
-    --btnFontColor: var(--white);
-  }
-  
-  .dark-theme {
-    --bg: var(--black);
-    --fontColor: var(--green);
-    --btnBg: var(--white);
-    --btnFontColor: var(--black);
-  }
+  --green: #00FF00;
+  --white: #FFFFFF;
+  --black: #000000;
+}
 
-  .btn {
-    position: absolute;
-    top: 20px;
-    left: 250px;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    border: none;
-    color: var(--btnFontColor);
-    background-color: var(--btnBg);
-  }
+body {
+  background: var(--bg);
+  color: var(--fontColor);
+  font-family: helvetica;
+}
+
+li {
+  list-style: circle;
+}
+
+.list {
+  list-style: square;
+}
+
+.light-theme {
+  --bg: var(--green);
+  --fontColor: var(--black);
+  --btnBg: var(--black);
+  --btnFontColor: var(--white);
+}
+
+.dark-theme {
+  --bg: var(--black);
+  --fontColor: var(--green);
+  --btnBg: var(--white);
+  --btnFontColor: var(--black);
+}
+
+.theme-btn {
+  position: relative;
+  margin: 10px;
+  height: 50px;
+  width: 100px;
+  border-radius: 5px;
+  border: none;
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+}
+
+.task-btn {
+  margin: 10px;
+  height: 50px;
+  width: 100px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--btnBg);
+  color: var(--btnFontColor);
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1em;
+}
+
+.remove-btn {
+  margin-left: 15px;
+  color: red;
+  cursor: pointer;
+}
+

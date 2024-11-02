@@ -1,6 +1,6 @@
 const { MongoClient, ServerApiVersion } = require('mongodb');
 var username = encodeURIComponent("jmckenna49");
-var password = encodeURIComponent("Gruelingshadow49!!");
+var password = encodeURIComponent("");
 
 async function main() {
     var uri = `mongodb+srv://${username}:${password}@mycluster.4q5ij.mongodb.net/?retryWrites=true&w=majority&appName=MyCluster`;

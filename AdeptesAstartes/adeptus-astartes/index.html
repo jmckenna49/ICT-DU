@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <!-- <link rel="stylesheet" href="styleguide.css" /> -->
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+    </style>
+  </head>
+  <body>
+    <div class="desktop">
+      <div class="overall-content">
+        <div class="overlap">
+          <div class="featured-group">
+            <!-- This will be a floating live chat button to speak with an AI Assistant -->
+            <div class="ai-chat-float">
+              <button class="fb">Chat with Servo Skull</button>
+            </div>
+            <img class="adeptus-astartes" src="img/adeptus-astartes-symbol.png" />
+
+            <!-- This is going to be a carousel of images that will be linked to
+             the relevant featured content on the web app or third-party websites -->
+             <div class="featured-carousel">
+              <div class="numbertext">1 / 3</div>
+              <img class="featured-scrollbar" src="img/headline.jpg" style="width:100%">
+              <div class="text">Caption Text</div>
+            </div>
+
+            <div class="featured-label">Featured</div>
+            <img class="arrow-right-circle" src="img/arrow-icon-right.png" />
+            <img class="arrow-left-circle" src="img/arrow-icon-left.png" />
+
+            <!-- Middle Feed timeline -->
+            <div class="feed-background">
+              <div class="feed-sec-background">
+                <button class="filter-button">
+                  <img class="filter-icon" src="img/filter-icon.png" />
+                  <div class="trend-text">Trending</div>
+                </button>
+
+                <div class="feed-label">Feed</div>
+
+                <!-- Though social card 1, 2, and 3 are all different elements, they all follow a
+                 template to reuse CSS elements -->
+                <div class="social-card-1">
+                  <img class="profile-pic" src="img/imp-fist.jpg" />
+                  <div class="username">ImperialFistWarden</div>
+                  <div class="divider"></div>
+                  <div class="faction">Imperial Fists</div>
+                  <div class="post-time">3hrs</div>
+                  <input class="menu" type="image" src="img/menu-dots.png" />
+                  <input class="x-icon" type="image" src="img/x-icon.png" />
+                  <p class="post-text">
+                    <span class="span"
+                      >Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis
+                      tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+                      tellus</span>
+                    <span class="text-wrapper-6">...see more</span>
+                  </p>
+                  
+                  <div class="overlap-social">
+                    <div class="like-rectangle">
+                      <input class="thumbs-up-2" type="image" src="img/thumbs-up.png" />
+                      <div class="likes-text-wrapper">1.1k</div>
+                    </div>
+
+                    <div class="thumbs-down-wrapper">
+                      <input class="thumbs-down-2" type="image" src="img/thumbs-down.png" />
+                    </div>
+
+                    <div class="comment-rectangle">
+                      <input class="comment-icon" type="image" src="img/comment-icon.png" />
+                      <div class="comment-text-wrapper">103</div>
+                    </div>
+
+                    <div class="share-rectangle">
+                      <input class="share-icon" type="image" src="img/share-icon.png" />
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="social-card-2">
+                  <img class="profile-pic" src="img/night_lord.jpg" />
+                  <div class="username">ShadowOfNostramo</div>
+                  <div class="divider"></div>
+                  <div class="faction">Night Lords</div>
+                  <div class="post-time">1d</div>
+                  <img class="social-image" src="img/night-lord-meme.jpg" />
+                  <input class="menu" type="image" src="img/menu-dots.png" />
+                  <input class="x-icon" type="image" src="img/x-icon.png" />
+                  <p class="post-text">
+                    <span class="span"
+                      >Borem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <p class="post-text"></span>
+                  </p>
+                  <div class="overlap-social">
+                    <div class="like-rectangle">
+                      <input class="thumbs-up-2" type="image" src="img/thumbs-up.png" />
+                      <div class="likes-text-wrapper">1.1k</div>
+                    </div>
+
+                    <div class="thumbs-down-wrapper">
+                      <input class="thumbs-down-2" type="image" src="img/thumbs-down.png" />
+                    </div>
+
+                    <div class="comment-rectangle">
+                      <input class="comment-icon" type="image" src="img/comment-icon.png" />
+                      <div class="comment-text-wrapper">103</div>
+                    </div>
+
+                    <div class="share-rectangle">
+                      <input class="share-icon" type="image" src="img/share-icon.png" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="social-card-3">
+                  <img class="profile-pic" src="img/adeptus-astartes-symbol.png" />
+                  <div class="username">InfiniteScroll</div>
+                  <div class="divider"></div>
+                  <div class="faction">Web-Developer</div>
+                  <input class="menu" type="image" src="img/menu-dots.png" />
+                  <input class="x-icon" type="image" src="img/x-icon.png" />
+                  <p class="post-text">
+                    <span class="span"
+                      >This website will be infinitely scrolling, much like other social media sites</p>
+                      <p class="post-text"></span>
+                  </p>
+                  <div class="overlap-social">
+                    <div class="like-rectangle">
+                      <input class="thumbs-up-2" type="image" src="img/thumbs-up.png" />
+                      <div class="likes-text-wrapper">0</div>
+                    </div>
+
+                    <div class="thumbs-down-wrapper">
+                      <input class="thumbs-down-2" type="image" src="img/thumbs-down.png" />
+                    </div>
+
+                    <div class="comment-rectangle">
+                      <input class="comment-icon" type="image" src="img/comment-icon.png" />
+                      <div class="comment-text-wrapper">0</div>
+                    </div>
+
+                    <div class="share-rectangle">
+                      <input class="share-icon" type="image" src="img/share-icon.png" />
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!-- Left Side Bar -->
+          <div class="left-bar-rectangle">
+            <!-- These buttons will eventually be implemented to take the user to each
+             respective landing page for these categories -->
+            <button class="friends-button">
+              <div class="friends-text">Friends</div>
+            </button>
+            <button class="loyalist-button">
+              <div class="loyalist-text">Loyalist</div>
+            </button>
+            <button class="chaos-button">
+              <div class="chaos-text">Chaos</div>
+            </button>
+            <button class="tube-button">
+              <div class="tube-text">The Tube</div>
+            </button>
+
+            <input class="friends-icon" type="image" src="img/friends-icon.png" />
+            <input class="video-icon" type="image" src="img/video-icon.png" />
+            <input class="chaos-png" type="image" src="img/chaos.png" />
+            <input class="loyalist-icon" type="image" src="img/adeptus-astartes-symbol2.png" />
+
+            <div class="recent-news-overlap">
+              <div class="recent-news-label">Recent News</div>
+              <div class="recent-news-rectangle">
+                <!-- The picture will eventually be linked through javascript -->
+                <img class="news-pic" src="img/lieutenant-titus.png" />
+                <div class="news-title">New Figurines!</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Side Bar -->
+          <div class="right-bar-overlap">
+            <div class="recent-wiki-overlap">
+              <div class="recent-wiki-rectangle">
+                <div class="label-minor">Recent Wiki Posts</div>
+                <div class="recent-wiki-posts-1">
+                  <img class="profile-pic-minor" src="img/raven-guard.jpg" />
+                  <div class="username-minor">FlamesOfSacrifice</div>
+                  <div class="faction-minor">DeathGuard</div>
+                  <div class="ellipse-minor"></div>
+                  <p class="post-text-minor">
+                    Worem ipsum dolor sit amet, consectetur adipiscing elit. <br />Etiam eu turpis molestie, dictum est a,
+                    mattis
+                  </p>
+                </div>
+
+                <div class="recent-wiki-posts-2">
+                  <img class="profile-pic-minor" src="img/salamander.jpg" />
+                  <div class="username-minor">PutridWarlord</div>
+                  <div class="faction-minor">Salamanders</div>
+                  <div class="ellipse-minor"></div>
+                  <p class="post-text-minor">Korem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <div class="recent-wiki-posts-3">
+                  <img class="profile-pic-minor" src="img/carcharadon.jpg" />
+                  <div class="username-minor">CoraxsChosen</div>
+                  <div class="faction-minor">RavenGuard</div>
+                  <div class="ellipse-minor"></div>
+                  <p class="post-text-minor">Morem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <div class="recent-wiki-posts-4">
+                  <img class="profile-pic-minor" src="img/em-child.jpg" />
+                  <div class="username-minor">FulgrimsGlory</div>
+                  <div class="faction-minor">Emperors Child</div>
+                  <div class="ellipse-minor"></div>
+                  <p class="post-text-minor">Morem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="recent-video-overlap">
+              <div class="recent-video-rectangle">
+                <div class="label-minor">Recent Video Uploads</div>
+
+                <div class="recent-video-rectangle-1">
+                  <img class="video-pic-minor" src="img/rogal-dorn.jpg" />
+                  <div class="video-title-wrapper">Title 1</div>
+                  <div class="video-desc-wrapper">Morem ips..</div>
+                  <p class="video-views-wrapper">5M views | 2 weeks ago</p>
+                </div>
+
+                <div class="recent-video-rectangle-2">
+                  <img class="video-pic-minor" src="img/emperor.png" />
+                  <div class="video-title-wrapper">Title 2</div>
+                  <div class="video-desc-wrapper">Qorem ips..</div>
+                  <p class="video-views-wrapper">5M views | 2 weeks ago</p>
+                </div>
+                
+                <div class="recent-video-rectangle-3">
+                  <img class="video-pic-minor" src="img/react-vid.jpg" />
+                  <div class="video-title-wrapper">Title 3</div>
+                  <div class="video-desc-wrapper">Korem ips..</div>
+                  <p class="video-views-wrapper">5M views | 2 weeks ago</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- This is the top navigation toolbar for quick display for other areas of the website. These
+       buttons will soon be implemented to take the user to each landing page -->
+      <div class="top-toolbar-overlap">
+        <div class="library-button">
+          <div class="tool-button-text">Library</div>
+        </div>
+
+        <div class="discuss-button">
+          <div class="tool-button-text">Discussions</div>
+        </div>
+
+        <div class="video-button">
+          <div class="tool-button-text">Videos</div>
+        </div>
+
+        <div class="search-bar">
+          <div class="search-layer">
+            <div class="leading-icon">
+              <div class="icon-wrapper">
+                <img class="search-icons" src="img/searchmenu-icon.png" />
+              </div>
+            </div>
+
+            <div class="content"><div class="supporting-text">Search text</div></div>
+            
+            <div class="trailing-elements">
+              <div class="element-trailing-icon">
+                  <div class="icon-wrapper">
+                    <img class="search-icons" src="img/search-icon.png" />
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The title will preferably be a hyperlink to take users back to the main home page -->
+      <div class="title-overlap">
+        <div class="title-rectangle">
+          <div class="web-title">Adeptus Astartes</div>
+        </div>
+        <div class="web-tagline">For the Emperor</div>
+      </div>
+
+      <!-- The languages will soon be a dropdown, and get a tool to translate the content on the 
+       pages for different preferred languages of the user -->
+      <div class="languages-button-overlap">
+        <div class="languages-button">
+          <img class="arrow-drop-down" src="img/down-icon.png" />
+          <img class="language" src="img/language-icon.png" />
+          <div class="language-text">Languages</div>
+        </div>
+      </div>
+
+      <!-- The profile icon will take the user to the user profile page -->
+      <img class="profile-pic-icon" src="img/chibi.png" />
+      
+    </div>
+  </body>
+</html>

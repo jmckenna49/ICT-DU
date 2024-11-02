@@ -22,7 +22,7 @@ const taskList = document.getElementById('task-list');
 const taskInput = document.getElementById('task-input');
 const addTaskBtn = document.getElementById('add-task-btn');
 
-// Function to create a new task item
+// Function to create a new task item, creating HTML li elements, or list items
 function createTaskItem(taskText) {
     const li = document.createElement('li');
     li.classList.add('list');

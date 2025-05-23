@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
             // Send data to the server using fetch
-            const response = await fetch("/submit-payment", {
+            const response = await fetch("/submit", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

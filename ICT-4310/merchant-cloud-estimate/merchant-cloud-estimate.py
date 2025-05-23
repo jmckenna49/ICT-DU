@@ -14,18 +14,18 @@ class AzureCostEstimator:
     def __init__(self,
                  vm_count=8,
                  vm_monthly_rate=49.0560,
-                 sql_storage_gb=8000 * 1 / 1024,      # 1 KB per transaction
+                 sql_storage_gb=20000 * 1 / 1024,      # 1 KB per transaction
                  sql_rate_per_gb=0.25,
-                 sql_read_ops=50000,                   # 1 read per transaction
-                 sql_write_ops=50000,                  # 1 write per transaction
+                 sql_read_ops=20000,                   # 1 read per transaction
+                 sql_write_ops=20000,                  # 1 write per transaction
                  sql_read_rate_per_10k=0.019,
                  sql_write_rate_per_10k=0.0228,
                  blob_storage_gb=100,
                  blob_rate_per_gb=0.15,
                  egress_tb_reserved=1,
                  egress_100tb_rate=1545.0,
-                 function_exec_count=8000,            # 1 function exec per transaction
-                 function_gb_seconds=8000 * 0.5,       # 0.5 GB-s per execution
+                 function_exec_count=20000,            # 1 function exec per transaction
+                 function_gb_seconds=20000 * 0.5,       # 0.5 GB-s per execution
                  function_exec_price_per_million=0.40,
                  function_gb_second_rate=0.000026):
 
@@ -65,10 +65,10 @@ class AzureCostEstimator:
 
     def compute_function_cost(self):
         # Free tier: 1M executions and 400,000 GB-s/month
-        billable_execs = max(0, self.function_exec_count - 1_000_000)
-        billable_gb_s = max(0, self.function_gb_seconds - 400_000)
+        billable_execs = max(0, self.function_exec_count - 1000000)
+        billable_gb_s = max(0, self.function_gb_seconds - 400000)
 
-        exec_cost = (billable_execs / 1_000_000) * self.function_exec_price_per_million
+        exec_cost = (billable_execs / 1000000) * self.function_exec_price_per_million
         gb_s_cost = billable_gb_s * self.function_gb_second_rate
 
         return exec_cost + gb_s_cost

@@ -78,15 +78,24 @@ body {
 .checkout_button {
   width: 140px;
   height: 52px;
-  background: rgba(217,217,217,1);
-  font-size:28px;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
+  background:transparent;
   opacity: 1;
   position: absolute;
   top: 840px;
   left: 196px;
   overflow: hidden;
+}
+.checkout_button button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  background-color: #b4b2b2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 .web_page_title_text {
   width: 632px;

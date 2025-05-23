@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Payment Server",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/payment_server.py",
+      "console": "integratedTerminal"
+    }
+  ]
+}

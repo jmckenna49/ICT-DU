@@ -21,20 +21,6 @@ class HTTPRequestHandler(SimpleHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-Type", "application/json") # <--- Fixed so this requires json application and content type
         self.end_headers()
-    def do_GET(self):
-        """ Handle GET requests, if file exists serve it.
-        Otherwise log the request.
-        """
-        request = urllib.parse.urlparse(self.path)
-        file = self.directory + request.path
-        
-        if os.path.exists(file):
-            super().do_GET()
-        else:
-            logging.info("GET request, \nPath: %s\nHeaders:\n%s\n", str(self.path), str(self.headers))
-            logging.info("File %s not found.", file)
-            self._set_response()
-            self.wfile.write(f"GET request for {self.path}".encode('utf-8'))
 
     def do_POST(self):
         """ Handles POST requests.
